@@ -1,14 +1,9 @@
 <?php
 
-    //I am just testing the autoloader here.
+    //I am just running a quick smoke test of the autoloader, yaml parsing and logging here.
 
-    require('autoload.php');
+    require('vendor/autoload.php');
 
-    use Symfony\Component\Yaml\Yaml;
     use Application\Basics\Stub;
-
-    $value = Yaml::parse("foo: bar");
-
-	print_r($value);
 
 	$stub = new Stub;

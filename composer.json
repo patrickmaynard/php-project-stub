@@ -1,5 +1,9 @@
 {
     "require": {
-        "symfony/yaml": "^3.0"
+        "symfony/yaml": "^3.0",
+        "monolog/monolog": "^1.25"
+    },
+    "autoload": {
+        "psr-4": { "": "src/" }
     }
 }
