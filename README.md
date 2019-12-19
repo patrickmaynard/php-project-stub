@@ -3,4 +3,4 @@ A basic scaffolding on which to build PHP projects using composer and a simple f
 
 To test the basics, run `php smoketest.php`
 
-TODO: Add PHPUnit tests and a simple Makefile for running them, along with a basic settings.yaml file.
+TODO: Add PHPUnit tests and a simple Makefile for running them, along with a basic settings.yaml file. Also a logger.
