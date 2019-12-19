@@ -5,4 +5,4 @@ To set things up, run `make init`.
 
 To test the basics, run `php smoketest.php`.
 
-TODO: Add PHPUnit tests and a simple Makefile for running them, along with a basic settings.yaml file. Also a logger.
+TODO: Add PHPUnit tests and a simple Makefile target for running them, along with a basic settings.yaml file.
