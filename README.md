@@ -1,7 +1,7 @@
 # PHP project stub
 A basic scaffolding on which to build PHP projects using composer and a simple folder structure.
 
-To set things up, run `composer install`.
+To set things up, run `make init`.
 
 To test the basics, run `php smoketest.php`.
 
