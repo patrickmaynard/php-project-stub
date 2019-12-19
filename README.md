@@ -1,5 +1,5 @@
 # PHP project stub
-A simple structure on which to build PHP projects using composer and a simple folder structure.
+A basic scaffolding on which to build PHP projects using composer and a simple folder structure.
 
 To test the basics, run `php smoketest.php`
 
