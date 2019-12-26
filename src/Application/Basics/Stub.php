@@ -2,6 +2,8 @@
 
 namespace Application\Basics;
 
+use Helpers\ConfigHelper;
+use Helpers\DatabaseHelper;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Psr\Log\LogLevel;
@@ -11,8 +13,10 @@ class Stub
 {
     public function __construct()
 	{
-        $value = Yaml::parse("foo: bar");
-        print_r($value);
+        $settings = ConfigHelper::getConfig();
+        print_r($settings);
+
+        $pdo = DatabaseHelper::getPdo();
 
 	    echo "\nTODO: Add better tests. And replace the ".__CLASS__." class with something useful.\n";
 	    echo "This message will also be logged.\n";
