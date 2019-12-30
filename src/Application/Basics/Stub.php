@@ -22,7 +22,11 @@ class Stub
 	    echo "This message will also be logged.\n";
 
         $logger = new Logger('A logger name');
-        $logger->pushHandler(new StreamHandler('logs/smoke-test-log.log', Logger::DEBUG));
+        $logger->pushHandler(new StreamHandler(
+            ConfigHelper::getRootDir() .
+            'logs/smoke-test-log.log',
+            Logger::DEBUG
+        ));
 
         $logger->log(
             LogLevel::DEBUG,
