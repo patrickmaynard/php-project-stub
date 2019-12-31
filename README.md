@@ -1,6 +1,8 @@
 # PHP project stub
 A basic scaffolding on which to build PHP projects using composer, MySQL and a simple folder structure.
 
+## Basic setup
+
 * To set things up, run `make init`.
 * To make the database connection work, update `config/settings.yaml`.
 * To test the basics, run `php public/index.php`.
@@ -8,8 +10,13 @@ A basic scaffolding on which to build PHP projects using composer, MySQL and a s
     * `cd public`
     * `php -S localhost:8000`
     * Visit `http://localhost:8000/` in a browser
+* To run unit tests, run `./vendor/bin/phpunit`.
 
-TODOs: 
+## More details
 
-* Add PHPUnit tests and a simple Makefile target for running them. 
-* Add a RECIPES.md file for stuff like copying the project to a new github repository.
+See SETUP.md for a few tips on doing additional common tasks, along with links to documentation used in setting up this stub.
+
+## TODO items 
+
+* Add more tests. 
+* Update SETUP.md to show how to create a new project.
