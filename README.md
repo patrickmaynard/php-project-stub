@@ -1,5 +1,5 @@
 # PHP project stub
-A basic scaffolding on which to build PHP projects using composer, MySQL and a simple folder structure.
+A basic scaffolding on which to build PHP projects using composer, MySQL and a simple folder structure. This is for very small projects where I don't need Symfony or Docker. For bigger projects, see https://github.com/patrickmaynard/symfony-5-docker.
 
 ## Basic setup
 
