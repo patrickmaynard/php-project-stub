@@ -11,5 +11,5 @@ jobs:
       - uses: php-actions/composer@v1 # or alternative dependency management
       - uses: php-actions/phpunit@v1
       - run: phpunit
-        - with:
+        with:
           - config: phpunit.xml
