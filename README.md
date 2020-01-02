@@ -22,4 +22,3 @@ See SETUP.md for a few tips on doing additional common tasks, along with links t
 
 * Add more tests. 
 * Update SETUP.md to show how to create a new project.
-* Set up automatic running of tests via a github action -- see https://github.com/marketplace/actions/phpunit-php-actions
