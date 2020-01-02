@@ -45,11 +45,11 @@ jobs:
             php${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-
       - name: Install lowest dependencies with composer
         if: matrix.dependencies == 'lowest'
-        run: ./tools/composer update --no-ansi --no-interaction --no-progress --no-suggest --prefer-lowest
+        run: php ./tools/composer update --no-ansi --no-interaction --no-progress --no-suggest --prefer-lowest
 
       - name: Install highest dependencies with composer
         if: matrix.dependencies == 'highest'
-        run: ./tools/composer update --no-ansi --no-interaction --no-progress --no-suggest
+        run: php ./tools/composer update --no-ansi --no-interaction --no-progress --no-suggest
 
       - name: Run sanity check
         run: bash ./build/scripts/sanity-check
