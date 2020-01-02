@@ -51,9 +51,6 @@ jobs:
         if: matrix.dependencies == 'highest'
         run: php ./tools/composer update --no-ansi --no-interaction --no-progress --no-suggest
 
-      - name: Run sanity check
-        run: bash ./build/scripts/sanity-check
-
       - name: Run tests with phpunit
         run: ./phpunit --coverage-clover=coverage.xml
 
