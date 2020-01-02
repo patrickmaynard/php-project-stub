@@ -1,4 +1,4 @@
-# https://github.com/sebastianbergmann/phpunit/blob/master/.github/workflows/ci.yml
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
 
 on:
   - pull_request
@@ -7,6 +7,23 @@ on:
 name: CI
 
 jobs:
+  lint-xml-configuration:
+    name: Lint XML Configuration
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        uses: ./.docker/lint-xml-configuration
+
+      - name: Lint XML configuration files
+        uses: ./.docker/lint-xml-configuration
+        with:
+          args: bash ./build/scripts/lint-xml-configuration
+
   tests:
     name: Tests
 
@@ -20,6 +37,7 @@ jobs:
           - "8.0"
 
         dependencies:
+          - lowest
           - highest
 
     steps:
@@ -54,3 +72,8 @@ jobs:
 
       - name: Run tests with phpunit
         run: ./phpunit --coverage-clover=coverage.xml
+
+      - name: Send code coverage report to Codecov.io
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: bash <(curl -s https://codecov.io/bash) || true
