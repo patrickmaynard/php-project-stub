@@ -18,3 +18,5 @@ I consulted the following pieces of documentation when setting up this project s
 
 * https://symfony.com/doc/current/components/yaml.html
 
+* https://www.jetbrains.com/help/phpstorm/symfony-support.html#symfony-code-style
+
