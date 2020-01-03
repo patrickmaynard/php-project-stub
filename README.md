@@ -20,5 +20,6 @@ See SETUP.md for a few tips on doing additional common tasks, along with links t
 
 ## TODO items 
 
+* Try re-introducing a code-coverage output, per the ci.yml file linked in SETUP.md.
 * Add more tests. 
 * Update SETUP.md to show how to create a new project.
