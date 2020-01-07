@@ -51,7 +51,7 @@ jobs:
         run: php ./tools/composer update --no-ansi --no-interaction --no-progress --no-suggest
 
       - name: Run tests with phpunit
-        run: ./vendor/bin/phpunit --coverage-clover=coverage.xml
+        run: ./vendor/bin/phpunit
 
       - name: Send code coverage report to Codecov.io
         env:
