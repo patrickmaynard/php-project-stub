@@ -20,5 +20,5 @@ See SETUP.md for a few tips on doing additional common tasks, along with links t
 
 ## TODO items 
 
-* Add more tests -- especially one to make sure that the getRootDir() function always returns the correct path, regardless of whether it's called from within the index file or not.
+* Add more tests.
 * Update SETUP.md to show how to create a new project.
