@@ -20,6 +20,5 @@ See SETUP.md for a few tips on doing additional common tasks, along with links t
 
 ## TODO items 
 
-* Add an interface for the stub class.
 * Add more tests.
 * Update SETUP.md to show how to create a new project.
