@@ -14,13 +14,13 @@ A few tips for additional common tasks:
 
 * `cd my-project`
 
-* `git remote add origin https://github.com/patrickmaynard/my-project.git`
+* `git remote set-url origin https://github.com/patrickmaynard/my-project.git`
 
 * `mv README.md README_OLD.md`
 
 * `echo "TODO: Add README contents" > README.md`
 
-* `git add README.md`
+* `git add README.md README_OLD.md`
 
 * `git commit -m "Add new README"`
 
