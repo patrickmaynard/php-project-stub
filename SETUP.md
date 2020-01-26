@@ -6,7 +6,27 @@
 
 A few tips for additional common tasks:
 
-* TODO: Add a how-to on creating a new github project out of this existing project
+### Setting up a new project
+
+* Create a new project on the github website. (For example, my-project)
+
+* `git clone https://github.com/patrickmaynard/php-project-stub.git my-project`
+
+* `cd my-project`
+
+* `git remote add origin https://github.com/patrickmaynard/my-project.git`
+
+* `mv README.md README_OLD.md`
+
+* `echo "TODO: Add README contents" > README.md`
+
+* `git add README.md`
+
+* `git commit -m "Add new README"`
+
+* `git push -u origin master`
+
+* Follow instructions in README_OLD.md to test the project
 
 ## Source documentation and ci.yml source
 
