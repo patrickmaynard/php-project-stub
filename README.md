@@ -20,4 +20,5 @@ See SETUP.md for a few tips on doing additional common tasks, along with links t
 
 ## TODO items 
 
+* Modify the ConfigHelper class to remove redundant code. (The first method can simply call the second.)
 * Add more tests.
