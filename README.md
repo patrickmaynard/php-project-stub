@@ -21,4 +21,5 @@ See SETUP.md for a few tips on doing additional common tasks, along with links t
 ## TODO items 
 
 * Modify the ConfigHelper class to remove redundant code. (The first method can simply call the second.)
+* Add Travis. Here's an example of how maybe to do it: https://github.com/dddinphp/last-wishes
 * Add more tests.
