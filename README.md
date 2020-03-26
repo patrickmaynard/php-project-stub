@@ -22,4 +22,5 @@ See SETUP.md for a few tips on doing additional common tasks, along with links t
 
 * Modify the ConfigHelper class to remove redundant code. (The first method can simply call the second.)
 * Use composer to require https://github.com/phpstan/phpstan and add a git hook for running it before every commit.
+* Declare strict types in the index file.
 * Add more tests.
