@@ -24,3 +24,4 @@ See SETUP.md for a few tips on doing additional common tasks, along with links t
 * Use composer to require https://github.com/phpstan/phpstan and add a git hook for running it before every commit.
 * Declare strict types in the index file.
 * Add more tests.
+* Use the errorexception class as a way to give the user error information.
